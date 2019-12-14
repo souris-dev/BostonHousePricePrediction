@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "575860328297",
+    "firebase_url": "https://bostonhousepricing.firebaseio.com",
+    "project_id": "bostonhousepricing",
+    "storage_bucket": "bostonhousepricing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575860328297:android:0929f5cc4f7cae4e1d5ff8",
+        "android_client_info": {
+          "package_name": "com.example.bostonhousepricing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575860328297-6d38q6gkdq5m4cnt8b705ocvrhk92oje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA946dv98te4Xx9H15kZ1PrZlOca9jed5Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575860328297-6d38q6gkdq5m4cnt8b705ocvrhk92oje.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

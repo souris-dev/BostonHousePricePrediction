@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent">
+
+        <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginTop="50dp">
+
+            <TableRow android:layout_height="match_parent" android:layout_width="match_parent">
+                <TextView
+                        android:text="Specify parameters and tap 'PREDICT'"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView6"
+                />
+            </TableRow>
+
+            <TableRow android:layout_height="match_parent" android:layout_width="match_parent">
+                <TextView
+                        android:text="CRIM:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView"
+                        android:layout_marginTop="33dp"/>
+            </TableRow>
+
+            <TableRow android:layout_height="match_parent" android:layout_width="109dp">
+                <EditText
+                        android:layout_width="109dp"
+                        android:layout_height="43dp"
+                        android:inputType="numberDecimal"
+                        android:ems="10"
+                        android:id="@+id/crimField"
+                        android:layout_marginTop="33dp"
+                />
+            </TableRow>
+
+
+            <TableRow android:layout_height="match_parent" android:layout_width="match_parent">
+                <TextView
+                        android:text="INDUS:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView2"
+                        android:layout_marginTop="42dp"/>
+            </TableRow>
+
+            <TableRow android:layout_height="match_parent" android:layout_width="match_parent">
+                <EditText
+                        android:layout_width="108dp"
+                        android:layout_height="47dp"
+                        android:inputType="numberDecimal"
+                        android:ems="10"
+                        android:id="@+id/indusField"
+                        android:layout_marginTop="33dp"
+                />
+            </TableRow>
+
+            <TableRow android:layout_height="match_parent" android:layout_width="match_parent">
+                <TextView
+                        android:text="TAX:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView3"
+                        android:layout_marginTop="42dp"/>
+            </TableRow>
+
+
+            <TableRow android:layout_height="match_parent" android:layout_width="match_parent">
+                <EditText
+                        android:layout_width="108dp"
+                        android:layout_height="45dp"
+                        android:inputType="numberDecimal"
+                        android:ems="10"
+                        android:id="@+id/taxField"
+                        android:layout_marginTop="33dp"/>
+            </TableRow>
+
+
+            <TableRow android:layout_height="match_parent" android:layout_width="match_parent">
+
+                <Button
+                        android:text="Predict"
+                        android:layout_width="wrap_content"
+                        android:layout_height="59dp"
+                        android:onClick="predictVal"
+                        android:id="@+id/predictBtn"
+                        android:layout_marginTop="42dp"
+                />
+            </TableRow>
+
+            <TableRow android:layout_height="match_parent" android:layout_width="match_parent">
+                <TextView
+                        android:text="Price prediction:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="42dp"
+                        android:id="@+id/textView4"/>
+            </TableRow>
+
+            <TableRow android:layout_height="match_parent" android:layout_width="match_parent">
+                <TextView
+                        android:text="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/predictionTextView"
+                        android:layout_marginTop="20dp"
+                />
+            </TableRow>
+
+            <TableRow android:layout_height="match_parent" android:layout_width="match_parent">
+                <TextView
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="42dp"
+                        android:id="@+id/textViewNull"/>
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
